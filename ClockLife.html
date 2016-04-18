@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="ClockLife.js"></script>
+		<link href="ClockLife.css" rel="stylesheet" type="text/css">
+	</head>
+	<body ng-app="Clock" ng-controller="MainController">
+		<div class="container_spinner">
+			<div ng-repeat="timeType in timeTypes" class={{timeType.classType}}>{{timeType.textDisplay}}</div>
+		</div>
+	</body>
+</html>
