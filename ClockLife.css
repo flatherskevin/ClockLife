@@ -1,0 +1,84 @@
+/*CSS for ClockLife*/
+
+/*-----------------------------------Terms----------------------------------*/
+/*.container_'...' 	= a container holding entirety of clock					*/
+/*.display_'...' 	= universal attributes per clock						*/
+/*.hour_'...' 		= displays hour of day									*/
+/*.minute_'...' 	= displays minute of day								*/
+/*.second_'...' 	= displays second of day								*/
+/*.dotdot_'...' 	= displays colon between hours and minutes				*/
+/*AMPM_'...' 		= displays AM or PM correlating with the hour of day	*/
+/*--------------------------------------------------------------------------*/
+
+/*--------------------------------Clock Types-------------------------------*/
+/*'...'_spinner 	= hours and minutes rotate to show digital and analog	*/
+/*						style clock movement								*/
+/*--------------------------------------------------------------------------*/
+
+/***********************/
+/*Spinner Clock Styling*/
+/***********************/
+
+.container_spinner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 100px;
+	width: 375px;
+}
+
+.display_spinner{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.hour_spinner{
+	height: 100px;
+	width: 100px;
+	left: 0px;
+	font-size: 56px;
+	text-align: center;
+	color: blue;
+}
+
+.minute_spinner{
+	height: 100px;
+	width: 100px;
+	left: 125px;
+	font-size: 72px;
+	text-align: center;
+	color: red;
+}
+
+.second_spinner{
+	width: 75px;
+	left: 225px;
+	font-size: 38px;
+	line-height: 42px;
+	text-align: left;
+	color: purple;
+}
+
+.dotdot_spinner{
+	width: 25px;
+	height: 50px;
+	font-size: 50px;
+	left: 100px;
+	text-align: center;
+	color: orange;
+}
+
+.AMPM_spinner{
+	height: 50px;
+	width: 75px;
+	left: 300px;
+	font-size: 48px;
+	text-align: center;
+	color: green;
+}
