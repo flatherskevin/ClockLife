@@ -10,7 +10,8 @@
 	</head>
 	<body ng-app="Clock" ng-controller="MainController">
 		<div class="container_spinner">
-			<div ng-repeat="timeType in timeTypes" class={{timeType.classType}}>{{timeType.textDisplay}}</div>
+			<div ng-repeat="spinner in timeSpinner" class={{spinner.classType}}>{{spinner.textDisplay}}</div>
+			<div class={{spinner.spacerClass}}
 		</div>
 	</body>
 </html>
