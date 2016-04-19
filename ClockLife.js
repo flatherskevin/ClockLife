@@ -36,7 +36,8 @@ Clock_Spinner = {
 	Hour:
 	{
 		classType: 'hour_spinner display_spinner',
-		textDisplay: HourNow()
+		textDisplay: HourNow(),
+		spacerClass: 'spacer-Spinner'
 	},
 
 	//The colon between hours and minutes
@@ -50,7 +51,8 @@ Clock_Spinner = {
 	Minute:
 	{
 		classType: 'minute_spinner display_spinner',
-		textDisplay: MinuteNow()
+		textDisplay: MinuteNow(),
+		spacerClass: 'spacer-Spinner'
 	},
 
 	//Assigns classes to display the second of day and calculates the current second
@@ -72,11 +74,17 @@ Clock_Spinner = {
 var Clock = angular.module('Clock',[]);
 
 Clock.controller('MainController',function($scope, $interval){
-	$scope.timeTypes = [Clock_Spinner.Hour,Clock_Spinner.DotDot,Clock_Spinner.Minute/*,Clock_Spinner.Second*/,Clock_Spinner.AmPm];
+	$scope.timeSpinner = [Clock_Spinner.Hour,Clock_Spinner.DotDot,Clock_Spinner.Minute,Clock_Spinner.AmPm];
+	
+	//Define intervals for clocks
 	$interval(function(){
-		$scope.timeTypes[0].textDisplay = (((new Date().getHours()) + 11) % 12) + 1;
-		$scope.timeTypes[2].textDisplay = MinuteNow();
-		$scope.timeTypes[3].textDisplay = (new Date().getHours() > 11) ? 'PM' : 'AM';
+		
+		//Spinner intervals initiated
+		$scope.timeSpinner[0].textDisplay = (((new Date().getHours()) + 11) % 12) + 1;
+		$scope.timeSpinner[2].textDisplay = MinuteNow();
+		$scope.timeSpinner[3].textDisplay = (new Date().getHours() > 11) ? 'PM' : 'AM';
+		
+		//Spinner rotation set
 		$(document).ready(function(){
 			RotateSec('.minute_spinner');
 			RotateMin('.hour_spinner');
