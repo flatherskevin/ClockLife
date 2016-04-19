@@ -42,34 +42,52 @@
 	height: 100px;
 	width: 100px;
 	left: 0px;
-	font-size: 56px;
+	line-height: 100px;
+	font-size: 72px;
 	text-align: center;
-	color: blue;
+	color: #00028a;
+	font-weight: 900;
+	background: -webkit-linear-gradient(bottom, #00028a, white);
+	background: -o-linear-gradient(bottom, #00028a, white);
+	background: -moz-linear-gradient(bottom, #00028a, white);
+	background: linear-gradient(bottom, #00028a, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .minute_spinner{
 	height: 100px;
 	width: 100px;
 	left: 125px;
+	line-height: 100px;
 	font-size: 72px;
 	text-align: center;
-	color: red;
+	color: #b20000;
+	font-weight: 900;
+	background: -webkit-linear-gradient(bottom, #b20000, white);
+	background: -o-linear-gradient(bottom, #b20000, white);
+	background: -moz-linear-gradient(bottom, #b20000, white);
+	background: linear-gradient(bottom, #b20000, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.second_spinner{
+/*.second_spinner{
 	width: 75px;
 	left: 225px;
 	font-size: 38px;
 	line-height: 42px;
 	text-align: left;
 	color: purple;
-}
+}*/
 
 .dotdot_spinner{
 	width: 25px;
-	height: 50px;
-	font-size: 50px;
+	height: 100px;
+	font-size: 60px;
+	line-height: 100px;
 	left: 100px;
+	font-weight: 900;
 	text-align: center;
 	color: orange;
 }
@@ -77,8 +95,16 @@
 .AMPM_spinner{
 	height: 50px;
 	width: 75px;
-	left: 300px;
+	left: 275px;
+	line-height: 50px;
 	font-size: 48px;
 	text-align: center;
-	color: green;
+	color: #004c00;
+	font-weight: 900;
+	background: -webkit-linear-gradient(bottom, #004c00, white);
+	background: -o-linear-gradient(bottom, #004c00, white);
+	background: -moz-linear-gradient(bottom, #004c00, white);
+	background: linear-gradient(bottom, #004c00, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
