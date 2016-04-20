@@ -9,9 +9,13 @@
 		<link href="ClockLife.css" rel="stylesheet" type="text/css">
 	</head>
 	<body ng-app="Clock" ng-controller="MainController">
-		<div class="container_spinner">
+		<div class="container_spinner container">
 			<div ng-repeat="spinner in timeSpinner" class={{spinner.classType}}>{{spinner.textDisplay}}</div>
-			<div class={{spinner.spacerClass}}
+		</div>
+		<div class="container_analog container">
+			<div ng-repeat="analog in timeAnalog" class={{analog.classType}}>
+				<div class={{analog.handClass}}></div>
+			</div>
 		</div>
 	</body>
 </html>
